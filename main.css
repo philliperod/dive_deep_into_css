@@ -61,13 +61,14 @@ body {
   margin: 0 16px;
 }
 
-.main-nav__item > a {
+.main-nav__item a {
   text-decoration: none;
   color: #0e4f1f;
   padding: 3px 0;
 }
 
-.main-nav__item a:hover {
+.main-nav__item a:hover,
+.main-nav__item a:active {
   color: #fff;
   border-bottom: 5px solid #fff;
 }
@@ -77,6 +78,21 @@ p::first-letter {
   color: red;
   font-size: 20px;
 }
+
+.main-nav__item__cta a {
+  color: #fff;
+  background-color: #ff1b68;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.main-nav__item__cta a:hover,
+.main-nav__item__Cta a:active {
+  color: #ff1b68;
+  background-color: #fff;
+  border: none;
+}
+
 /* h1 {
     font-family: sans-serif;
 } */
