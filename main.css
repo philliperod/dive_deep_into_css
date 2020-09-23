@@ -29,6 +29,14 @@ body {
   padding: 8px 16px;
 }
 
+.main-host {
+  display: inline-block;
+}
+
+.main-nav__item {
+  display: inline-block; /* this will set the inline elements next to each other side by side */
+}
+
 /* h1 {
     font-family: sans-serif;
 } */
