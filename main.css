@@ -29,12 +29,42 @@ body {
   padding: 8px 16px;
 }
 
-.main-host {
+.main-header__host {
   display: inline-block;
+}
+
+.main-header__brand {
+  color: #0e4f1f;
+  text-decoration: none; /* this will remove the underline in the link */
+  font-weight: bold;
+  font-size: 22px;
+  vertical-align: middle; /* to fix the alignment across the navbar, you will use this on both elements */
+}
+
+.main-nav {
+  display: inline-block;
+  text-align: right;
+  vertical-align: middle;
+  width: calc(
+    100% - 77px
+  ); /* calc() is a function that will do the math regardless the input type; previous math was (100% - 48px) because of main-host content size; to counter the whitespace you subtract more than the content size of the other element */
+}
+
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none; /* this removes the bulletin points for the unordered list */
 }
 
 .main-nav__item {
   display: inline-block; /* this will set the inline elements next to each other side by side */
+  margin: 0 16px;
+}
+
+.main-nav__item > a {
+  text-decoration: none;
+  color: #0e4f1f;
+  padding: 0 5px;
 }
 
 /* h1 {
